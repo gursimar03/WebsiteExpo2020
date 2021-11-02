@@ -1,0 +1,338 @@
+
+/* 
+    Created on : 21 Oct 2021, 09:14:06
+    Author     : Gursimar Singh
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:  border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #CB4336;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,102,0.950315160243785) 30%, rgba(146,68,142,1) 45%, rgba(0,212,255,1) 100%);
+}
+
+.logo{
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    
+}
+
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 20px;
+}
+
+.carousel {
+  position: relative;
+  top: 60px;
+  z-index: 0;
+ 
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  align-items: center;
+  width: 100%;
+ 
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+  position: absolute;
+  top: 0;
+}
+
+#slideshow .item {
+    border: grey thin solid;
+  height: 550px;
+  overflow: hidden;
+}
+
+.item img {
+    position: absolute;
+    object-fit:scale-down;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+main > h1{
+    text-align: center;
+    
+}
+main{
+    top: 450px;
+    padding-top: 40px;
+}
+
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+        
+}
+
+.container{
+	max-width: 1170px;
+        max-height: 300px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+    float: bottom;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+
+hr{
+   
+    width: 100%;
+}
+.logo .nav-links{
+    padding-top:10px;
+}
+    
+.about{
+   padding: 50px;
+}
+
+.LeftParagraph{
+    text-align: left;
+    padding: 80px;
+   width: auto;
+   
+}
+
+.LeftImage{
+    float: right;
+    width: 30%;
+  border: thin fuchsia groove;
+    padding: 5px;
+    box-shadow: 5px 10px #421650;
+    
+}
+.RightParagraph{
+    text-align: right;
+    padding: 80px;
+    
+}
+
+.RightImage{
+    float: left;
+    width: 30%;
+    border: thin fuchsia groove;
+    padding: 5px;
+    box-shadow: 5px 10px #421650;
+}
+
+.wrapper {
+  padding: 80px;
+  display: grid;
+  grid-template-columns: 400px 400px;
+  justify-content: center;
+}
+
+.grid{
+    text-align: center;
+    border: thin black solid;
+    border-radius: 5px;
+    margin: 35px;
+    padding: 10px;  
+    height: 400px;
+    box-shadow: 5px 10px #421650;
+}
+
+.twitter-tweet{
+    padding-top: 20px;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #8944b8;
+    border-radius: 6px;
+}
+
+
+
+/*
+Media & Photos 
+*/
+
+
+.BlankContainer{
+    height: 60px;
+    width: 100%;
+}
+
+.Media{
+    align-content: center;
+    transition: transform .2s;
+     box-shadow: 5px 10px #421650;
+    margin: 30px;
+    padding: 5px;
+    width: 30%;
+   border: thin fuchsia groove;
+}
+.Media:hover{
+    transform: scale(1.2);
+}
+/*
+ About Page
+*/
+
+.About{
+    padding: 40px;
+    text-align: center;
+}
+
+/*
+Tourism
+*/
+
+.TourismText{
+    width: 60%;
+    margin: 20px;   
+    padding:10px;
+    border: thin black solid;
+    box-shadow: 5px 10px #421650;
+    transition: trasnform .3s;
+}
+
+.TourismText:hover{
+    transform: translate(5px,2%);
+}
+
+#NoPadding{
+    padding-bottom:0px;
+}
+
+/*
+    Pavilion
+*/
+
+#bannerimage {
+  width: 100%;
+  height: 470px;
+  top: 30px;
+  background-color: purple;
+  background-position: center;
+}
+
+#IrelandPavilionimg{
+    float:right;
+    display: flex;
+}
+
+#AboutIreland{
+   margin-bottom: 200px;
+}
